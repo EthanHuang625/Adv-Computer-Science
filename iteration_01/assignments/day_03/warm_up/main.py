@@ -36,7 +36,7 @@ def main():
             tri.describe()
             print(f"Area in m^2: {cm2_to_m2(tri.area()):.4f}")
         elif choice == '4':
-            print("Thats not nice!")
+            print("Are you a tomato?")
             break
         else:
             print("Bro. Follow the instructions.")
