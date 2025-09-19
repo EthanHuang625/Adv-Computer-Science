@@ -28,10 +28,14 @@ def home():
         <p>Be sure to visit http://127.0.0.1:5000/api/jokes/2 for 2 funny jokes!</p>
     """
     return html_content
+@app.route("/api/joke<int:n>")
+def get_joke(n):
+    joke_list = []
+    for i in range(n):
+        
+        joke_list.append(random.choice(jokes))
 
-@app.route("/api/joke")
-def get_joke():
-    return jsonify(random.choice(jokes))
+    return jsonify(joke_list)
 
 ###############################################################################
 # Now you need to add a route parameter! Think about how we can do this using #
