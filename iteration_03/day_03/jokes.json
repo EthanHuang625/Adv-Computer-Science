@@ -1,0 +1,12 @@
+[
+  {"id": 1, "setup": "Why did the scarecrow win an award?", "punchline": "Because he was outstanding in his field!"},
+  {"id": 2, "setup": "Why don’t skeletons fight each other?", "punchline": "They don’t have the guts."},
+  {"id": 3, "setup": "What do you call fake spaghetti?", "punchline": "An impasta."},
+  {"id": 4, "setup": "Why did the bicycle fall over?", "punchline": "Because it was two-tired."},
+  {"id": 5, "setup": "Why did the math book look sad?", "punchline": "Because it had too many problems."},
+  {"id": 6, "setup": "Why don’t scientists trust atoms?", "punchline": "Because they make up everything."},
+  {"id": 7, "setup": "Why did the coffee file a police report?", "punchline": "It got mugged."},
+  {"id": 8, "setup": "Why was the computer cold?", "punchline": "It left its Windows open."},
+  {"id": 9, "setup": "Why did the tomato turn red?", "punchline": "Because it saw the salad dressing!"},
+  {"id": 10, "setup": "Why did the cookie go to the hospital?", "punchline": "Because he felt crummy."}
+]
