@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %} Contact Us {% endblock %}
+{% block content %}
+<h1>Contact Us</h1>
+<div class="contact-info">
+    <p><strong>Email:</strong> 
+        {% if email %}
+            {{ email }}
+        {% else %}
+            <p>Email not available</p>
+        {% endif %}
+    </p>
+    <p><strong>GitHub:</strong>
+        {% if GitHub %}
+            {{ GitHub }}
+        {% else %}
+            <p>GitHub username not available</p>
+        {% endif %}
+    </p>
+    <p><strong>Phone:</strong>
+        {% if phone %}
+            {{ phone }}
+        {% else %}
+            <p>Phone number not available</p>
+        {% endif %}
+    </p>
+</div>
+{% endblock %}

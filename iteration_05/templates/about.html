@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %} About {% endblock %}
+{% block content %}
+<h1>About me</h1>
+<div class="contact-info">
+    <p><strong>Fav Food:</strong> 
+        {% if food %}
+            {{ food }}
+        {% else %}
+            <p>{{name}} doesnt like eating food ig</p>
+        {% endif %}
+    </p>
+    <p><strong>Name:</strong>
+        {% if name %}
+            {{ name }}
+        {% else %}
+            <p>no name ig</p>
+        {% endif %}
+    </p>
+    <p><strong>Favorite language:</strong>
+        {% if fav_lang %}
+            {{ fav_lang }}
+        {% else %}
+            <p>Ig {{name}} doesnt like programming</p>
+        {% endif %}
+    </p>
+</div>
+
+{% endblock %}
