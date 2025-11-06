@@ -1,28 +1,40 @@
 {% extends 'base.html' %}
-{% block title %} Contact Us {% endblock %}
+{% block title %}Contact Us{% endblock %}
 {% block content %}
-<h1>Contact Us</h1>
-<div class="contact-info">
-    <p><strong>Email:</strong> 
-        {% if email %}
-            {{ email }}
-        {% else %}
-            <p>Email not available</p>
-        {% endif %}
-    </p>
-    <p><strong>GitHub:</strong>
-        {% if GitHub %}
-            {{ GitHub }}
-        {% else %}
-            <p>GitHub username not available</p>
-        {% endif %}
-    </p>
-    <p><strong>Phone:</strong>
-        {% if phone %}
-            {{ phone }}
-        {% else %}
-            <p>Phone number not available</p>
-        {% endif %}
-    </p>
+<div class="max-w-2xl mx-auto bg-white rounded-lg shadow-sm p-8">
+    <h1 class="text-3xl font-bold text-gray-900 mb-6 text-center">Contact Us</h1>
+    <div class="space-y-6">
+        <div class="flex items-center border-b border-gray-200 pb-4">
+            <span class="text-primary font-semibold w-40">Email:</span>
+            <span class="text-gray-700">
+                {% if email %}
+                        {{ email }}
+                {% else %}
+                    Email not available
+                {% endif %}
+            </span>
+        </div>
+        <div class="flex items-center border-b border-gray-200 pb-4">
+            <span class="text-primary font-semibold w-40">GitHub:</span>
+            <span class="text-gray-700">
+                {% if GitHub %}
+                        {{ GitHub }}
+
+                {% else %}
+                    GitHub username not available
+                {% endif %}
+            </span>
+        </div>
+        <div class="flex items-center border-b border-gray-200 pb-4">
+            <span class="text-primary font-semibold w-40">Phone:</span>
+            <span class="text-gray-700">
+                {% if phone %}
+                    {{ phone }}
+                {% else %}
+                    Phone number not available
+                {% endif %}
+            </span>
+        </div>
+    </div>
 </div>
 {% endblock %}
